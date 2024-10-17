@@ -11,6 +11,41 @@ body {
     background-color: black;
 }
 
+.txt-animado {
+    font-size: 45px;
+    font-weight: 300;
+
+}
+
+.txt-animado span{
+    position: relative;
+}
+
+.txt-animado span::before {
+    content: "";
+    color: chartreuse ;
+    animation: palavras 20s infinite;
+}
+
+@keyframes palavras {
+    0%,20%{
+        content: "💡I am an Undergraduate Senior Software Engineering student (2025)";
+    }
+    21%,40%{
+        content: "Learning in areas of:";
+    }
+    41%,60%{
+        content: "Software Engineering";
+    }
+    61%,80%{
+        content: "Cybersecurity and Data Science.";
+    }
+    81%,100%{
+        content: "🔭 I am currently open for internship.";
+    }
+    
+}
+
 p, li {
     font-size: 36px;
 }
