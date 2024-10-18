@@ -13,6 +13,7 @@ layout: default
         background-size: cover;
     }
 
+
     .header {
         padding-top: 20px;
         text-align: left;
@@ -27,6 +28,41 @@ layout: default
         font-size: 40px;
         font-weight: inherit;
     }
+
+    .txt-animado {
+    font-size: 45px;
+    font-weight: 300;
+
+}
+
+.txt-animado span{
+    position: relative;
+}
+
+.txt-animado span::before {
+    content: "";
+    color: chartreuse ;
+    animation: palavras 15s infinite;
+}
+
+@keyframes palavras {
+    0%,20%{
+        content: "💡I am an Undergraduate Senior Software Engineering student (2025)";
+    }
+    21%,40%{
+        content: "Learning in areas of:";
+    }
+    41%,60%{
+        content: "Software Engineering";
+    }
+    61%,80%{
+        content: "Cybersecurity and Data Science.";
+    }
+    81%,100%{
+        content: "🔭 I am currently open for internship.";
+    }
+    
+}
 
     .social-button {
         width: 75px;
@@ -59,6 +95,8 @@ layout: default
         }
     }
 </style>
+
+
 
 <div class="header">
     <h1 class="name"><span>Hello, I'm Amauri</span></h1>
